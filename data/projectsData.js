@@ -1,19 +1,27 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Clipboard',
+    description: `Most scheduling applications bombard the user with far too much information which results in them being overwhelmed with information, clipbaord aims to only focus on the right things..`,
+    imgSrc: '/static/images/Clip.png',
+    href: 'https://github.com/Mohamed-Ayaan358/clipboard_frontend',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'Secrets',
+    description: `My attempt at learning website security and the 6 different levels of safety so that it can be implemented in my fruture website designs.`,
+    imgSrc: '/static/images/secrets.png',
+    href: 'https://github.com/Mohamed-Ayaan358/Secrets',
+  },
+  {
+    title: 'Planet portfolio',
+    description: `A website designed using Three.js as well as 3D modelling and can be used as a template portflio`,
+    imgSrc: '/static/images/Planet.png',
+    href: 'https://github.com/Mohamed-Ayaan358/3D-Portfolio',
+  },
+  {
+    title: 'Recommendation-system',
+    description: `Using Python, we can make a whole recommendation system complete with a GUI`,
+    imgSrc: '/static/images/rec.png',
+    href: 'https://github.com/Mohamed-Ayaan358/Recommendation-system',
   },
 ]
 

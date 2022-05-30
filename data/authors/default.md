@@ -1,16 +1,15 @@
 ---
-name: Tails Azimuth
-avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+name: Mohamed Ayaan
+avatar: /static/images/Avatar.jpeg
+occupation: 2nd Year College Student
+company: PES University
+email: ayaan35813@gmail.com
+linkedin: https://www.linkedin.com/in/mohamed-ayaan-1750311b8/
+github: https://github.com/Mohamed-Ayaan358
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+Hi there!
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
+My name is Mohamed Ayaan and welcome to my little corner of the net! I'm currently a 2nd year Btech student at PES University.This website is where I hope to express my intrests in web development as well as computer research.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Also do keep waiting for new blog posts that will be arriving anytime soon !
