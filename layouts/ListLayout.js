@@ -53,7 +53,16 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             //
-            const lang_frame = ['next-js', 'markdown', 'react-js', 'node-js', 'ai/ml', 'css3']
+            const lang_frame = [
+              'next-js',
+              'markdown',
+              'react-js',
+              'node-js',
+              'ai/ml',
+              'css3',
+              'angular-js',
+              'vue-js',
+            ]
             return (
               <li key={slug} className="py-4">
                 <article className="space-y-2 rounded-3xl bg-emerald-300 py-3 dark:bg-gray-800 xl:grid xl:grid-cols-3 xl:items-baseline xl:space-y-0">
