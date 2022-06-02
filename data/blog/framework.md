@@ -3,7 +3,7 @@ title: Confused about frameworks?
 date: '2022-06-02'
 tags: ['react-js', 'angular-js', 'vue-js', 'beginner']
 draft: false
-summary: 'The blog template supports posts in nested sub-folders. This can be used to group posts of similar content e.g. a multi-part course. This post is itself an example of a nested route!'
+summary: 'A simple 5 minute guide to decide on your framework'
 ---
 
 # Lets get familiar with these frameworks!
@@ -40,7 +40,7 @@ My view on the matter? React is perfect for beginners as it is comparatively eas
 | Data Binding     | **Uni-Directional**                               |
 | Rendering        | **Server-Side**                                   |
 
-Angular is a tried and true framework which is still used to a large extent, but it is used for more specific demands where the `number of resources being utilised must be reduced`, as `traffic itself is low `so that we do not unnecessarily use resources. (i.e minimalist web pages).
+Angular is a tried and true framework which is still used to a large extent, but it is used for more specific demands where the `number of resources being utilized must be reduced`, as `traffic itself is low `so that we do not unnecessarily use resources. (i.e minimalist web pages).
 
 ## VueJS
 
@@ -55,7 +55,7 @@ Angular is a tried and true framework which is still used to a large extent, but
 | Data Binding     | **Uni-Directional**                               |
 | Rendering        | **Server-Side**                                   |
 
-It follows angular’s method of extending HTML with HTML attributes called derivative.Vuejs has three types of binding:- 1. One Way binding 2. Two Way binding 3. Loop binding
+It follows angular’s method of extending HTML with HTML attributes called derivative.VueJs has three types of binding:- 1. One Way binding 2. Two Way binding 3. Loop binding
 
 Due to its relative obscurity, many beginners would dismiss this framework, I personally would not fall into this trap, and rather focus on this along with React. `Simply because no one can predict the future development processes, and due to the large variety of features as well as being lightweight can lead to a potential surge in demand for this framework.`
 
