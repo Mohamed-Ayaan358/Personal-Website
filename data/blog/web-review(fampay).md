@@ -18,9 +18,9 @@ Lets start off with the underappreciated layer of the site, the `BACKEND`
 
   1. ### <ins>Django and DRF</ins> ->
 
-     Most people dont know that Django was named after the jazz guitarist, `Django Reinhardt`, and just like it's namesake it is quite the jazzy framework. ;)
+     Most people don't know that Django was named after the jazz guitarist, `Django Reinhardt`, and just like it's namesake it is quite the jazzy framework. ;)
 
-     The entire point of using Django is to not reinvent the wheel, and considering that Fampay would be more preoccupied with the UPI layer as well as make an intuitive frontend.
+     The entire point of using Django is to not reinvent the wheel, and considering that FamPay would be more preoccupied with the UPI layer as well as make an intuitive frontend.
      There are several reasons as to why you want to use Django:
 
      A) Simple Syntax <br/>
@@ -40,7 +40,7 @@ Lets start off with the underappreciated layer of the site, the `BACKEND`
 
      If one is familiar with these message brokers, then you would have also come across `MEMPHIS`, it is a real time data processing platform that is known for its well built integrations.
 
-     I believe that Celery was an appropriate choice for FamPay's usecase, consider this they have to handle several thousands of transactions occuring every hour, so tracking all this data would require an efficient system and Celery is built specifically for that purpose.
+     I believe that Celery was an appropriate choice for FamPay's use case, consider this they have to handle several thousands of transactions occurring every hour, so tracking all this data would require an efficient system and Celery is built specifically for that purpose.
 
 Now to the flashier (not to mention vain) brother of `BACKEND`, here comes `FRONTEND`
 
@@ -56,11 +56,11 @@ One this is a company that focuses heavily on their app and hence we must look i
 
 - ### Frontend
 
-  Fampay provides its services over multiple streams from the <ins>website</ins> to android and iOS <ins>apps</ins>.
+  FamPay provides its services over multiple streams from the <ins>website</ins> to android and iOS <ins>apps</ins>.
 
   1.  ### <ins>Website</ins> ->
 
-          According to their blogpost, they have Next.JS deployed on EC2 as their frontend, If you want to see as to why NextJS would be utilised here, you can refer to my ``confused about frameworks?`` blog post.
+          According to their blogpost, they have Next.JS deployed on EC2 as their frontend, If you want to see as to why NextJS would be utilized here, you can refer to my ``confused about frameworks?`` blog post.
 
           Something which I have not often come across is the production process manager, `PM2`. It is a daemon process manager that will help you manage and keep you application online as well as to help maintain it constantly.
 
@@ -70,19 +70,19 @@ One this is a company that focuses heavily on their app and hence we must look i
 
   2.  ### <ins>Android</ins> ->
 
-          It's built using Java/Kotlin using "modern android frameworks", now I cannot conclusively say which one it could be, but I can put my money down on it being android studio as Fampay strikes me as a no nonsense company that wants to deliver the product with the least amount of effort.
+          It's built using Java/Kotlin using "modern android frameworks", now I cannot conclusively say which one it could be, but I can put my money down on it being android studio as FamPay strikes me as a no nonsense company that wants to deliver the product with the least amount of effort.
 
           Onto how they manage their network framework, which is by using `Retrofit` and `RxJava`.
 
-          Retrofit is a type safe HTTP client for android and Java, it is a very good one at that compares to many of the other libraries out there like `Fuel` and `Feign`.`Fuel` focused on making the HTTP client network as simple as possible for <ins>Kotlin</ins> applications specifically and `Feign` had utilised the same principles as that of Retrofit, showcasing that when it comes to the field, you just cant beat retrofit.
+          Retrofit is a type safe HTTP client for android and Java, it is a very good one at that compares to many of the other libraries out there like `Fuel` and `Feign`.`Fuel` focused on making the HTTP client network as simple as possible for <ins>Kotlin</ins> applications specifically and `Feign` had utilized the same principles as that of Retrofit, showcasing that when it comes to the field, you just cant beat retrofit.
 
-          Personally I havent used RxJava before so I am in no position to explain why it is better than its alternatives if that exist, any emails would be much appreciated.
+          Personally I haven't used RxJava before so I am in no position to explain why it is better than its alternatives if that exist, any emails would be much appreciated.
 
   3.  ### <ins>iOS</ins> ->
 
           Nothing new to see here, they have used a combination of `Swift`, `SwiftUI` and `Combine`.
 
-          Combine provides a declarative Swift API for processing values over time, utilising a publisher and subscriber model. It is extremely useful when it comes to centralizing your event processing code.
+          Combine provides a declarative Swift API for processing values over time, utilizing a publisher and subscriber model. It is extremely useful when it comes to centralizing your event processing code.
 
           According to their blog post, they have implemented solutions like changing servers on the fly within the app itself, which is really hard if you think about it. As you would want to have really good load balancing as well as consensus setup for the distributed system.
 
@@ -92,9 +92,9 @@ We finally arrive at the final and most important component of any application, 
 
   1.  ### <ins>PostgreSQL</ins> ->
 
-          Considering the fact that transactional data along with profile data is highly relational by nature, you would rightly assume that they would utilise a RDBMS database.
+          Considering the fact that transactional data along with profile data is highly relational by nature, you would rightly assume that they would utilize a RDBMS database.
 
-          PostgreSQL is well maintained and is the next step from using basic MySQL. It also has very `good connection support` to services which would utilise it.
+          PostgreSQL is well maintained and is the next step from using basic MySQL. It also has very `good connection support` to services which would utilize it.
 
           <Image alt="ocean" src="/static/images/postgres.png" width={500} height={300} />
 
@@ -104,10 +104,10 @@ We finally arrive at the final and most important component of any application, 
 
   2.  ### <ins>Redis</ins> ->
 
-          Whenever I find that a website utilises Redis it truly does make me happy, Redis is being used more widely and for good reason.
+          Whenever I find that a website utilizes Redis it truly does make me happy, Redis is being used more widely and for good reason.
 
-          They are most likely using it as the cache server, due to its handy features ranging from `automatix expirations`, `built-in replication` to `LRU eviction`. The redis server is likely going to be used along with ``Redis cluster`` and ``Redis sentinel``.
-          It has an absolutely gargantuan amount of supported datatypes and being `in memory` means that it has extremely quick retrieval of data from  the RAM itself and not utilsing the SSD whatsoever.
+          They are most likely using it as the cache server, due to its handy features ranging from `automatic expirations`, `built-in replication` to `LRU eviction`. The redis server is likely going to be used along with ``Redis cluster`` and ``Redis sentinel``.
+          It has an absolutely gargantuan amount of supported datatype and being `in memory` means that it has extremely quick retrieval of data from  the RAM itself and not utilizing the SSD whatsoever.
 
           <Image alt="ocean" src="/static/images/redis.png" width={500} height={300} />
 
@@ -123,12 +123,12 @@ A very basic setup on frontend point of view and is very straight to the point. 
 
 ### <ins>Database Score</ins> -> `9.5/10`
 
-A really good setup for what needs to be stored in the database as well as utilsing `redis` is an extremely good choice when dealing with transactional operations.
+A really good setup for what needs to be stored in the database as well as utilizing `redis` is an extremely good choice when dealing with transactional operations.
 
 With that we have come to the end of the review, its been a pleasure and I hope to see you soon!
 
 ---
 
-### Considering that the blogpost is a bit old, they may have altered several parts of their tech stack if anyone from `Fampay` can update me on any of the new changes then that would be spectacular.
+### Considering that the blogpost is a bit old, they may have altered several parts of their tech stack if anyone from `FamPay` can update me on any of the new changes then that would be spectacular.
 
 BLOG POST LINK -> https://fampay.in/blog/the-story-behind-fampays-tech-stack/
