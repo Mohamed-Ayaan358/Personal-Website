@@ -129,4 +129,6 @@ With that we have come to the end of the review, its been a pleasure and I hope 
 
 ---
 
+### Considering that the blogpost is a bit old, they may have altered several parts of their tech stack if anyone from `Fampay` can update me on any of the new changes then that would be spectacular.
+
 BLOG POST LINK -> https://fampay.in/blog/the-story-behind-fampays-tech-stack/
