@@ -14,7 +14,7 @@ export async function getStaticProps() {
 
 export default function Tags({ tags }) {
   const sortedTags = Object.keys(tags).sort((a, b) => tags[b] - tags[a])
-  const lang_frame = ['next-js', 'markdown', 'react-js', 'node-js', 'ai/ml', 'css3']
+  const lang_frame = ['next-js', 'markdown', 'react-js', 'node-js', 'ai/ml', 'css3', '']
   return (
     <>
       <PageSEO title={`Tags - ${siteMetadata.author}`} description="Things I blog about" />

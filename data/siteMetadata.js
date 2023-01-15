@@ -3,7 +3,7 @@ const siteMetadata = {
   headerTitle: 'Mohamed Ayaan',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
+  siteUrl: 'https://ayaan.gq',
   // Gotta change this after doing vercel installation
   siteRepo: 'https://github.com/Mohamed-Ayaan358/Personnel-Website',
   logo: '💻',
