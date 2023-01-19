@@ -1,7 +1,7 @@
 ---
 title: Web Review 👏👏
 date: '2023-01-14'
-tags: ['next-js', 'django', 'Celery', 'PostgreSQL', 'Redis', 'Engage']
+tags: ['next-js', 'django', 'celery', 'postgreSQL', 'redis', 'engage']
 draft: false
 summary: Example of a markdown file with code blocks and syntax highlighting
 ---

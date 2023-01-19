@@ -1,10 +1,12 @@
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
-import TagLang from '@/components/TagLang'
+import TagDatab from '@/components/TagDatabase'
+import TagBack from '@/components/TagBackend'
+import TagFront from '@/components/TagFrontend'
 import siteMetadata from '@/data/siteMetadata'
 import { useState } from 'react'
 import Pagination from '@/components/Pagination'
-import formatDate from '@/lib/utils/formatDate'
+// import formatDate from '@/liackb/utils/formatDate'
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
   const [searchValue, setSearchValue] = useState('')
@@ -62,14 +64,19 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               'css3',
               'angular-js',
               'vue-js',
+              'Redis',
             ]
+            const lang_frontend = ['next-js', 'react-js', 'vue-js', 'angular-js']
+            const lang_backend = ['node-js', 'express-js', 'celery']
+            const lang_database = ['redis', 'postgresql', 'mysql', '']
+
             return (
               <li key={slug} className="py-4">
                 <article className="space-y-2 rounded-3xl bg-emerald-300 py-3 dark:bg-gray-800 xl:grid xl:grid-cols-3 xl:items-baseline xl:space-y-0">
                   <dl>
                     <dt className="sr-only">Published on</dt>
                     <dd className="text-black-700 px-5 text-base font-medium leading-6 dark:text-gray-400">
-                      <time dateTime={date}>{formatDate(date)}</time>
+                      <time dateTime={date.getUTCDate}> {date} </time>
                     </dd>
                   </dl>
                   <div className="space-y-3 xl:col-span-3">
@@ -85,8 +92,12 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                       <div className="flex flex-wrap px-5">
                         {tags.map(
                           (tag) =>
-                            lang_frame.includes(tag) ? (
-                              <TagLang key={tag} text={tag} />
+                            lang_frontend.includes(tag) ? (
+                              <TagFront key={tag} text={tag} />
+                            ) : lang_backend.includes(tag) ? (
+                              <TagBack key={tag} text={tag} />
+                            ) : lang_database.includes(tag) ? (
+                              <TagDatab key={tag} text={tag} />
                             ) : (
                               <Tag key={tag} text={tag} />
                             )
