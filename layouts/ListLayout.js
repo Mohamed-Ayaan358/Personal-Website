@@ -72,7 +72,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
 
             return (
               <li key={slug} className="py-4">
-                <article className="space-y-2 rounded-3xl bg-emerald-300 py-3 dark:bg-gray-800 xl:grid xl:grid-cols-3 xl:items-baseline xl:space-y-0">
+                <article className="space-y-2 rounded-3xl bg-cyan-300 py-3 dark:bg-gray-800 xl:grid xl:grid-cols-3 xl:items-baseline xl:space-y-0">
                   <dl>
                     <dt className="sr-only">Published on</dt>
                     <dd className="text-black-700 px-5 text-base font-medium leading-6 dark:text-gray-400">

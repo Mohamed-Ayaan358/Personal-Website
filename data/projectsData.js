@@ -23,6 +23,12 @@ const projectsData = [
     imgSrc: '/static/images/rec.png',
     href: 'https://github.com/Mohamed-Ayaan358/Recommendation-system',
   },
+  {
+    title: 'SysPerf',
+    description: `A modern-ish looking system monitor that uses what we would call the "next-gen" languages rust and go!`,
+    imgSrc: '/static/images/sysperf.png',
+    href: 'https://github.com/Mohamed-Ayaan358/SysPerf',
+  },
 ]
 
 export default projectsData
