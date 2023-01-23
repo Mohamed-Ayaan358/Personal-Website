@@ -10,7 +10,7 @@ github: https://github.com/Mohamed-Ayaan358
 
 Hi there!
 
-My name is Mohamed Ayaan and welcome to my little corner of the net! I'm currently a 2nd year Btech student at PES University.This website is where I hope to express my intrests in web development as well as computer research.
+My name is Mohamed Ayaan and welcome to my little corner of the net! I'm currently a 3rd year Btech student at PES University.This website is where I hope to express my intrests in web development as well as computer research.
 
 Also do keep waiting for new blog posts that will be arriving anytime soon !
 

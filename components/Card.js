@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import Image from './Image'
 import Link from './Link'
 
@@ -14,7 +15,7 @@ const Card = ({ title, description, imgSrc, href }) => (
             <Image
               alt={title}
               src={imgSrc}
-              className="object-cover object-center md:h-36 lg:h-48"
+              className="object-cover object-center text-black md:h-36 lg:h-48"
               width={544}
               height={306}
             />
