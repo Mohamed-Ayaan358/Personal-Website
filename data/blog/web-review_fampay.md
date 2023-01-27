@@ -1,9 +1,9 @@
 ---
-title: Web Review 👏👏
+title: Web Review (Fampay)👏👏
 date: '2023-01-14'
 tags: ['next-js', 'django', 'celery', 'postgreSQL', 'redis', 'engage']
 draft: false
-summary: Example of a markdown file with code blocks and syntax highlighting
+summary: The first installment of my analysis of various websites
 ---
 
 # Hey guys Ayaan here, and welcome to web review.
