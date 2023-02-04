@@ -8,7 +8,13 @@ summary: Back at it again with a review on CRED
 
 # What's up guys Ayaan here, and welcome to web review.
 
-Unfortunately, I was unable to find the exact tech stack that CRED utilizes, so after a lot of interpolation and research I think I have come pretty close.
+Sadly, I was unable to find the `exact` tech stack that CRED utilizes, so after a lot of interpolation and research I think I have come pretty close.
+
+---
+
+Special thanks to [P K Navin Shrinivas](https://www.linkedin.com/in/p-k-navin-shrinivas-1020a01b7/) and [Anirudh Rowjee](http://rowjee.com/) for proofreading the blogpost, thanks guys!
+
+---
 
 ## This week we are going to take a look at CRED's website!
 
