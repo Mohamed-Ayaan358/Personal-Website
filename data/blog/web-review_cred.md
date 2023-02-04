@@ -8,8 +8,6 @@ summary: Back at it again with a review on CRED
 
 # What's up guys Ayaan here, and welcome to web review.
 
-# What's up guys Ayaan here, and welcome to web review.
-
 Unfortunately, I was unable to find the exact tech stack that CRED utilizes, so after a lot of interpolation and research I think I have come pretty close.
 
 ## This week we are going to take a look at CRED's website!
