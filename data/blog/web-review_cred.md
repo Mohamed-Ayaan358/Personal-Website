@@ -1,7 +1,7 @@
 ---
 title: Web Review (CRED)👏👏
 date: '2023-01-24'
-tags: ['next-js', 'django', 'celery', 'postgreSQL', 'redis', 'engage']
+tags: ['node-js', 's3', 'firebase', 'styled-components', 'next-js', 'golang', 'swift']
 draft: false
 summary: Back at it again with a review on CRED
 ---

@@ -1,7 +1,7 @@
 ---
 title: Web Review (Fampay)👏👏
 date: '2023-01-14'
-tags: ['next-js', 'django', 'celery', 'postgreSQL', 'redis', 'engage']
+tags: ['next-js', 'django', 'celery', 'postgreSQL', 'redis', 'engage', 'flutter']
 draft: false
 summary: The first installment of my analysis of various websites
 ---

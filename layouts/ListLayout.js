@@ -67,9 +67,16 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               'vue-js',
               'Redis',
             ]
-            const lang_frontend = ['next-js', 'react-js', 'vue-js', 'angular-js']
+            const lang_frontend = [
+              'next-js',
+              'react-js',
+              'vue-js',
+              'angular-js',
+              'styled-components',
+              'swift',
+            ]
             const lang_backend = ['node-js', 'express-js', 'celery']
-            const lang_database = ['redis', 'postgresql', 'mysql', '']
+            const lang_database = ['redis', 'postgresql', 'mysql', 's3', 'firebase']
 
             return (
               <li key={slug} className="py-4">
