@@ -56,17 +56,17 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             //
-            const lang_frame = [
-              'next-js',
-              'markdown',
-              'react-js',
-              'node-js',
-              'ai/ml',
-              'css3',
-              'angular-js',
-              'vue-js',
-              'Redis',
-            ]
+            // const lang_frame = [
+            //   'next-js',
+            //   'markdown',
+            //   'react-js',
+            //   'node-js',
+            //   'ai/ml',
+            //   'css3',
+            //   'angular-js',
+            //   'vue-js',
+            //   'Redis',
+            // ]
             const lang_frontend = [
               'next-js',
               'react-js',
@@ -74,9 +74,26 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               'angular-js',
               'styled-components',
               'swift',
+              'react-native',
             ]
-            const lang_backend = ['node-js', 'express-js', 'celery']
-            const lang_database = ['redis', 'postgresql', 'mysql', 's3', 'firebase']
+            const lang_backend = [
+              'node-js',
+              'express-js',
+              'celery',
+              'laravel',
+              'ruby',
+              'scala',
+              'graphql',
+            ]
+            const lang_database = [
+              'redis',
+              'postgresql',
+              'mysql',
+              's3',
+              'firebase',
+              'dynamodb',
+              'cassandra',
+            ]
 
             return (
               <li key={slug} className="py-4">

@@ -97,11 +97,11 @@ Let's mix up things this time and analyze the website the way god intended, that
 
 The backend is well established, utilizing `languages that cover each other's bases` and I am personally biased toward Golang being utilized in this scenario.
 
-### <ins>Frontend Score</ins> -> `8/10`
+### <ins>Frontend Score</ins> -> `8.5/10`
 
 I do thoroughly like the mobile application as well as the well-organized tech stack, the website also appears to be well made other `than some design points which I found particularly jarring`.
 
-### <ins>Database Score</ins> -> `8/10`
+### <ins>Database Score</ins> -> `7.5/10`
 
 A `great combination of different cloud storage services`, but wouldn't recommend using both if you were starting on your own application. If need be use one and then when required, move/add to it.
 

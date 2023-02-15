@@ -121,7 +121,7 @@ Very tight fitting backend with a lot of functionality, personally enjoy using D
 
 A very basic setup on frontend point of view and is very straight to the point. Personally I believe that `Flutter's` cross platform functionality and wide support would be really beneficial over here, but I do understand that swapping from the preset version is a very intensive operation.
 
-### <ins>Database Score</ins> -> `9.5/10`
+### <ins>Database Score</ins> -> `9/10`
 
 A really good setup for what needs to be stored in the database as well as utilizing `redis` is an extremely good choice when dealing with transactional operations.
 
