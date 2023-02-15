@@ -1,7 +1,7 @@
 ---
 name: Mohamed Ayaan
 avatar: /static/images/Avatar.jpeg
-occupation: 2nd Year College Student
+occupation: 3rd Year College Student
 company: PES University
 email: ayaan35813@gmail.com
 linkedin: https://www.linkedin.com/in/mohamed-ayaan-1750311b8/
