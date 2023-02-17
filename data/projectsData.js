@@ -1,19 +1,19 @@
 const projectsData = [
   {
     title: 'Clipboard',
-    description: `Most scheduling applications bombard the user with far too much information which results in them being overwhelmed with information, clipbaord aims to only focus on the right things..`,
+    description: `Most scheduling applications bombard the user with far too much information which results in them being overwhelmed with information, clipboard aims to only focus on the right things..`,
     imgSrc: '/static/images/Clip.png',
     href: 'https://github.com/Mohamed-Ayaan358/clipboard_frontend',
   },
   {
     title: 'Secrets',
-    description: `My attempt at learning website security and the 6 different levels of safety so that it can be implemented in my fruture website designs.`,
+    description: `My attempt at learning website security and the 6 different levels of safety so that it can be implemented in my future website designs.`,
     imgSrc: '/static/images/secrets.png',
     href: 'https://github.com/Mohamed-Ayaan358/Secrets',
   },
   {
     title: 'Planet portfolio',
-    description: `A website designed using Three.js as well as 3D modelling and can be used as a template portflio`,
+    description: `A website designed using Three.js as well as 3D modelling and can be used as a template portfolio`,
     imgSrc: '/static/images/Planet.png',
     href: 'https://github.com/Mohamed-Ayaan358/3D-Portfolio',
   },
