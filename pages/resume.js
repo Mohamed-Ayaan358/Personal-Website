@@ -15,7 +15,7 @@ export default function Resume() {
           </RoughNotation>
         </h1> */}
         <h1 className="mb-10 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl  sm:leading-10 md:px-6 md:text-6xl md:leading-14">
-          <RoughNotation type="highlight" color="#5c6ac4" show={'True'}>
+          <RoughNotation type="highlight" color="#009688" show={'True'}>
             Hitlist Coming soon
           </RoughNotation>
         </h1>
