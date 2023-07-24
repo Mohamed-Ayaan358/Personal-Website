@@ -6,7 +6,7 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl 
   const router = useRouter()
   return (
     <Head>
-      <title>{title}</title>
+      <title>ION</title>
       <meta name="robots" content="follow, index" />
       <meta name="description" content={description} />
       <meta property="og:url" content={`${siteMetadata.siteUrl}${router.asPath}`} />
@@ -59,6 +59,7 @@ export const TagSEO = ({ title, description }) => {
         twImage={twImageUrl}
       />
       <Head>
+        <title>ION</title>
         <link
           rel="alternate"
           type="application/rss+xml"
@@ -148,6 +149,7 @@ export const BlogSEO = ({
         canonicalUrl={canonicalUrl}
       />
       <Head>
+        <title>ION</title>
         {date && <meta property="article:published_time" content={publishedAt} />}
         {lastmod && <meta property="article:modified_time" content={modifiedAt} />}
         <script
