@@ -1,6 +1,6 @@
 ---
 title: Web Review (RAZORPAY)👏👏
-date: '2023-02-09'
+date: '2023-07-09'
 tags: ['react-js', 'cassandra', 'graphql', 'laravel', 'dynamodb', 'scala', 'react-native', 'ruby']
 draft: false
 summary: Time for a razor-sharp review of Razorpay
@@ -18,16 +18,15 @@ We can't just jump into the tastiest part of the dish yet, let's savour this mea
 
   1. ### <ins>Website</ins> ->
 
+     Razorpay had humble beginnings as an API gateway for developers to enable payments, they then decided to make a website where they leveraged the tricks of the trade they developed and became enormously successful.
 
-      Razorpay had humble beginnings as an API gateway for developers to enable payments, they then decided to make a website where they leveraged the tricks of the trade they developed and became enormously successful.
+     The website is likely built using `React.js` as well as its own UI builder tools used for designing as well as acting as a scaffold for the website. It's pretty nice to see that companies invest in their UI builder tools rather than relying on `Figma`.
 
-      The website is likely built using `React.js` as well as its own UI builder tools used for designing as well as acting as a scaffold for the website. It's pretty nice to see that companies invest in their UI builder tools rather than relying on `Figma`.
+     `(This post was made by a person who dislikes Adobe's pricing system).`
 
-      `(This post was made by a person who dislikes Adobe's pricing system).`
+       <Image alt="ocean" src="/static/images/razor_web.png" width={500} height={300} />
 
-        <Image alt="ocean" src="/static/images/razor_web.png" width={500} height={300} />
-
-      Although most people treat React as the entryway to the web development industry, I believe that it is nonetheless a robust system that has enormous potential `IF` built the right way. It does have its issues, if you are careless you can render your application a bloated mess and every developer is aware of the fact that too many packages lead to too many `react version` requirements, which clash often.
+     Although most people treat React as the entryway to the web development industry, I believe that it is nonetheless a robust system that has enormous potential `IF` built the right way. It does have its issues, if you are careless you can render your application a bloated mess and every developer is aware of the fact that too many packages lead to too many `react version` requirements, which clash often.
 
   <details>
        <summary>Backbone.JS</summary>

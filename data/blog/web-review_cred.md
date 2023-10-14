@@ -1,6 +1,6 @@
 ---
 title: Web Review (CRED)👏👏
-date: '2023-01-24'
+date: '2023-09-24'
 tags: ['node-js', 's3', 'firebase', 'styled-components', 'next-js', 'golang', 'swift']
 draft: false
 summary: Back at it again with a review on CRED

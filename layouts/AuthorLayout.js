@@ -19,8 +19,8 @@ export default function AuthorLayout({ children, frontMatter }) {
             <Image
               src={avatar}
               alt="avatar"
-              width="192px"
-              height="192px"
+              width="200px"
+              height="270px"
               className="h-48 w-48 rounded-3xl"
             />
             <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">{name}</h3>
@@ -29,6 +29,7 @@ export default function AuthorLayout({ children, frontMatter }) {
             <div className="flex space-x-3 pt-6">
               <SocialIcon kind="mail" href={`mailto:${email}`} />
               <SocialIcon kind="github" href={github} />
+              <SocialIcon kind="twitter" href={twitter} />
               <SocialIcon kind="linkedin" href={linkedin} />
             </div>
           </div>
