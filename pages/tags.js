@@ -44,9 +44,10 @@ export default function Tags({ tags }) {
               </div>
             )
           })}
+
+          {/* <Sketch /> */}
         </div>
       </div>
-      <Sketch />
     </>
   )
 }

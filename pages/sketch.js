@@ -6,8 +6,8 @@ class Sketch extends Component {
     super()
     this.renderRef = React.createRef()
     this.state = {
-      x: 100,
-      y: 100,
+      x: 50,
+      y: 50,
     }
   }
 
@@ -15,8 +15,9 @@ class Sketch extends Component {
     const p5 = require('p5')
     this.sketch = new p5((p) => {
       p.setup = () => {
-        p.createCanvas(p.windowWidth, p.windowHeight).parent(this.renderRef.current)
-        p.background('white')
+        p.createCanvas(p.windowWidth / 2, p.windowHeight / 2).parent(this.renderRef.current)
+        p.frameRate(30)
+        p.background('black')
         p.strokeWeight(5)
       }
       p.windowResized = () => {
