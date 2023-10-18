@@ -1,3 +1,4 @@
+import React, { Component } from 'react'
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
@@ -5,6 +6,10 @@ import TagLang from '@/components/TagLang'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllTags } from '@/lib/tags'
 import kebabCase from '@/lib/utils/kebabCase'
+
+import Sketch from './sketch'
+
+// window.p5 = p5;
 
 export async function getStaticProps() {
   const tags = await getAllTags('blog')
@@ -41,6 +46,7 @@ export default function Tags({ tags }) {
           })}
         </div>
       </div>
+      <Sketch />
     </>
   )
 }

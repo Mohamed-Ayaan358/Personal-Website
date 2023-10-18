@@ -1,29 +1,24 @@
-/* src/App.css */
+/* styles.css */
 
-.App {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
+.ball {
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: lightblue;
+  pointer-events: auto;
+  /* Enable mouse events on the balls */
+  display: inline-block;
+  width: 60px;
+  /* Set the size of the circle */
+  height: 60px;
+  /* Set the size of the circle */
+  user-select: none;
+  /* Prevent text selection within the circle */
 }
 
-.content {
-  z-index: 1;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  /* Allow interaction with elements behind the canvas */
+.ball a {
+  text-decoration: none;
+  /* Remove underlines from the links */
+  color: black;
+  /* Set the text color of the links */
 }
