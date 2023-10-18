@@ -1,0 +1,13 @@
+/* Add this to Sketch.css */
+.ball {
+  position: absolute;
+  z-index: -1;
+  /* Ensure the balls are behind other content */
+}
+
+.ball-container {
+  position: relative;
+  /* Contain the balls within this container */
+  width: 100%;
+  height: 100%;
+}
