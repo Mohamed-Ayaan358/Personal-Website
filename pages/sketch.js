@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 // import logo from './logo.svg';
-import kebabCase from '@/lib/utils/kebabCase'
 
 class Sketch extends Component {
   constructor() {
@@ -28,19 +27,7 @@ class Sketch extends Component {
         p.frameRate(30)
         // p.background('red')
         for (let i = 0; i < 15; i++) {
-          const t = tags[i]
-          const tagText = t
-          const tagLink = `/tags/${kebabCase(t)}`
-          const tagCount = tags[t]
-
-          let ball = new Ball(
-            p.random(p.windowWidth),
-            p.random(p.windowHeight),
-            p.random(20, 40),
-            tagText,
-            tagLink,
-            tagCount
-          )
+          let ball = new Ball(p.random(p.windowWidth), p.random(p.windowHeight), p.random(20, 40))
           balls.push(ball)
         }
       }
@@ -61,70 +48,38 @@ class Sketch extends Component {
         }
       }
       class Ball {
-        constructor(x, y, r, tagText, tagLink, tagCount) {
+        constructor(x, y, r) {
           const randomColor = p.color(p.random(255), p.random(255), p.random(255))
           this.x = x
           this.y = y
           this.r = r
-          this.tagText = tagText
-          this.tagLink = tagLink
-          this.tagCount = tagCount
-
           this.dx = p.random(-4, 4) // Increase the initial speed
           this.dy = p.random(-4, 4) // Increase the initial speed
-
-          // this.htmlElement = p.createDiv() // Create a span element
-          // this.htmlElement.class('ball')
-          // this.htmlElement.position(this.x - this.r, this.y - this.r)
-          // this.htmlElement.style('position', 'absolute');
-          // this.htmlElement.style('border', '2px solid black');
-          // this.htmlElement.style('border-radius', '50%');
-          // this.htmlElement.style('background-color', 'lightblue');
-          // this.htmlElement.style('pointer-events', 'auto');
-          // this.htmlElement.style('display', 'inline-block');
-          // this.htmlElement.style('width', '100px');
-          // this.htmlElement.style('height', '100px');
-          // this.htmlElement.style('user-select', 'none');
-          // this.htmlElement.style('background-color', p.color(randomColor.levels[0], randomColor.levels[1], randomColor.levels[2]));
-
-          // this.htmlElement.mousePressed(() => {
-          //     dragging = this;
-          //     offsetX = this.x - p.mouseX;
-          //     offsetY = this.y - p.mouseY;
-          // });
-          // this.htmlElement.mouseReleased(() => {
-          //     dragging = null
-          // })
-
-          this.htmlElement = p.createDiv() // Create a div element
+          this.htmlElement = p.createDiv() // Create a span element
           this.htmlElement.class('ball')
+          this.htmlElement.position(this.x - this.r, this.y - this.r)
           this.htmlElement.style('position', 'absolute')
-          this.htmlElement.style('left', this.x - this.r + 'px')
-          this.htmlElement.style('top', this.y - this.r + 'px')
-          // this.htmlElement.style('width', this.r * 2 + 'px');
-          // this.htmlElement.style('height', this.r * 2 + 'px');
-          this.htmlElement.style('border-radius', '50%')
-          this.htmlElement.style('text-align', 'center')
-          // this.htmlElement.style('position', 'absolute');
-          // this.htmlElement.style('z-index', '-1');
           this.htmlElement.style('border', '2px solid black')
           this.htmlElement.style('border-radius', '50%')
           this.htmlElement.style('background-color', 'lightblue')
-          // this.htmlElement.style('pointer-events', 'auto');
+          this.htmlElement.style('pointer-events', 'auto')
           this.htmlElement.style('display', 'inline-block')
-          this.htmlElement.style('width', '100px')
-          this.htmlElement.style('height', '100px')
-          // Create an anchor element with the link
-          let link = p.createA(this.tagLink, this.tagText)
-          link.parent(this.htmlElement)
-          link.style('display', 'block')
-          link.style('margin-top', '50%')
-          link.style('transform', 'translateY(-50%)')
-
-          // Display tag count
-          // let tagCountSpan = p.createSpan(` (${this.tagCount})`);
-          // tagCountSpan.class('text-sm font-semibold uppercase text-gray-600 dark:text-gray-300');
-          // tagCountSpan.parent(this.htmlElement);
+          this.htmlElement.style('width', '60px')
+          this.htmlElement.style('height', '60px')
+          this.htmlElement.style('user-select', 'none')
+          this.htmlElement.style(
+            'background-color',
+            p.color(randomColor.levels[0], randomColor.levels[1], randomColor.levels[2])
+          )
+          this.htmlElement.style('z-index', '-1')
+          this.htmlElement.mousePressed(() => {
+            dragging = this
+            offsetX = this.x - p.mouseX
+            offsetY = this.y - p.mouseY
+          })
+          this.htmlElement.mouseReleased(() => {
+            dragging = null
+          })
 
           // Create an anchor element with the link
           // let link = p.createA('https://example.com', 'Click me!')
@@ -148,9 +103,9 @@ class Sketch extends Component {
           }
           let isTagsInURL = window.location.href.includes('tags')
 
-          if (!isTagsInURL) {
-            p.remove()
-          }
+          // if (!isTagsInURL) {
+          //     p.remove()
+          // }
           this.htmlElement.position(this.x - this.r, this.y - this.r)
         }
 
