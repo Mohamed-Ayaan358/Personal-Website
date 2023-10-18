@@ -26,7 +26,7 @@ class Sketch extends Component {
         p.createCanvas(p.windowWidth / 4, p.windowHeight / 4).parent(this.renderRef.current)
         p.frameRate(30)
         // p.background('red')
-        for (let i = 0; i < 15; i++) {
+        for (let i = 0; i < 10; i++) {
           let ball = new Ball(p.random(p.windowWidth), p.random(p.windowHeight), p.random(20, 40))
           balls.push(ball)
         }
