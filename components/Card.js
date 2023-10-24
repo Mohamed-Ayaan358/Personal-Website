@@ -4,7 +4,7 @@ import Link from './Link'
 
 const Card = ({ title, description, imgSrc, href }) => (
   <div className="p-6">
-    <h2 className="mb-3 text-2xl font-bold leading-8  tracking-tight dark:text-white">
+    <h2 className="mb-3 text-2xl font-bold leading-8  tracking-tight dark:text-black">
       {href ? (
         <Link href={href} aria-label={`Link to ${title}`}>
           {title}
@@ -13,7 +13,7 @@ const Card = ({ title, description, imgSrc, href }) => (
         title
       )}
     </h2>
-    <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
+    <p className="prose mb-3 max-w-none text-2xl text-gray-500 dark:text-black">{description}</p>
     {href && (
       <Link
         href={href}

@@ -16,8 +16,8 @@ figure {
   -webkit-transform: translateZ(-540px);
   position: relative;
   margin: 0;
-  width: 500px;
-  height: 300px;
+  width: 550px;
+  height: 400px;
   -webkit-transition: 1s;
 }
 
@@ -26,43 +26,43 @@ figure {
   border: 15px solid rgba(0, 0, 0, 0.8);
   opacity: 0.5;
   -webkit-transition: 1s;
-  width: 500px;
-  height: 300px;
+  width: 550px;
+  height: 400px;
 }
 
 .carousel div:nth-child(1) {
   -webkit-transform: translateZ(540px) scale(0.8);
-  /* background-color: #ff5733; */
+  background-color: #ff5733;
 }
 
 .carousel div:nth-child(2) {
   -webkit-transform: rotateY(45deg) translateZ(540px) scale(0.8);
-  /* background-color: #33ff57; */
+  background-color: #33ff57;
 }
 
 .carousel div:nth-child(3) {
   -webkit-transform: rotateY(90deg) translateZ(540px) scale(0.8);
-  /* background-color: #5733ff; */
+  background-color: #5733ff;
 }
 
 .carousel div:nth-child(4) {
   -webkit-transform: rotateY(135deg) translateZ(540px) scale(0.8);
-  /* background-color: #ff5733; */
+  background-color: #ff5733;
 }
 
 .carousel div:nth-child(5) {
   -webkit-transform: rotateY(180deg) translateZ(540px) scale(0.8);
-  /* background-color: #33ff57; */
+  background-color: #33ff57;
 }
 
 .carousel div:nth-child(6) {
   -webkit-transform: rotateY(225deg) translateZ(540px) scale(0.8);
-  /* background-color: #5733ff; */
+  background-color: #5733ff;
 }
 
 .carousel div:nth-child(7) {
   -webkit-transform: rotateY(270deg) translateZ(540px) scale(0.8);
-  /* background-color: #ff5733; */
+  background-color: #ff5733;
 }
 
 .carousel div:nth-child(8) {
@@ -82,8 +82,16 @@ label {
   border-radius: 50%;
   width: 30px;
   height: 30px;
+
   /* Increase the height to create a circular label */
   font: 0.9em Arial;
+}
+
+.centered-inputs {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  /* Center on the x-axis */
 }
 
 .carousel-input {
@@ -93,15 +101,15 @@ label {
   height: 100%;
 }
 
-.carousel-label:hover {
+.carousel-label {
   background: #ddd;
+  margin-top: 3rem;
+  margin-left: 5rem;
 }
 
-.carousel-input:checked + .carousel-label {
-  font-weight: bold;
-  background: #ddd;
-}
+/*  */
 
+/*  */
 .carousel-input[value='1']:checked ~ .container .carousel {
   -webkit-transform: translateZ(-540px);
 }
