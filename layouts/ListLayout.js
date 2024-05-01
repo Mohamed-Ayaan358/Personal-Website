@@ -106,7 +106,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                   </dl>
                   <div className="space-y-3 xl:col-span-3">
                     <div>
-                      <h3 className="text-2xl font-bold leading-8 tracking-tight">
+                      <h3 className="px-2 text-2xl font-bold leading-8 ">
                         <Link href={`/blog/${slug}`} className="px-5 text-black dark:text-gray-100">
                           {title}
                         </Link>
