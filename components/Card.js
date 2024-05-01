@@ -3,7 +3,7 @@ import Image from './Image'
 import Link from './Link'
 
 const Card = ({ title, description, imgSrc, href }) => (
-  <div className="p-6">
+  <div className="bg-gray-300 p-6 dark:border-primary-500 dark:bg-gray-700">
     <h2 className="mb-3 text-2xl font-bold leading-8  tracking-tight dark:text-black">
       {href ? (
         <Link href={href} aria-label={`Link to ${title}`}>

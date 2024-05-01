@@ -24,45 +24,46 @@ figure {
 .carousel div {
   position: absolute;
   border: 15px solid rgba(0, 0, 0, 0.8);
-  opacity: 0.5;
+  /* opacity: 0.5; */
   -webkit-transition: 1s;
   width: 550px;
   height: 400px;
 }
 
+/* bg-gray-300 dark:border-primary-500 dark:border-opacity-60 dark:bg-gray-700 */
 .carousel div:nth-child(1) {
   -webkit-transform: translateZ(540px) scale(0.8);
-  background-color: #ff5733;
+  /* background-color: #ff5733; */
 }
 
 .carousel div:nth-child(2) {
   -webkit-transform: rotateY(45deg) translateZ(540px) scale(0.8);
-  background-color: #33ff57;
+  /* background-color: #33ff57; */
 }
 
 .carousel div:nth-child(3) {
   -webkit-transform: rotateY(90deg) translateZ(540px) scale(0.8);
-  background-color: #5733ff;
+  /* background-color: #5733ff; */
 }
 
 .carousel div:nth-child(4) {
   -webkit-transform: rotateY(135deg) translateZ(540px) scale(0.8);
-  background-color: #ff5733;
+  /* background-color: #ff5733; */
 }
 
 .carousel div:nth-child(5) {
   -webkit-transform: rotateY(180deg) translateZ(540px) scale(0.8);
-  background-color: #33ff57;
+  /* background-color: #33ff57; */
 }
 
 .carousel div:nth-child(6) {
   -webkit-transform: rotateY(225deg) translateZ(540px) scale(0.8);
-  background-color: #5733ff;
+  /* background-color: #5733ff; */
 }
 
 .carousel div:nth-child(7) {
   -webkit-transform: rotateY(270deg) translateZ(540px) scale(0.8);
-  background-color: #ff5733;
+  /* background-color: #ff5733; */
 }
 
 .carousel div:nth-child(8) {

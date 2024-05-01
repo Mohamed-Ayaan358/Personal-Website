@@ -45,7 +45,7 @@ export default function Tags({ tags }) {
             )
           })}
         </div>
-        <Sketch tags={sortedTags} />
+        {/* <Sketch tags={sortedTags} /> */}
       </div>
     </>
   )
