@@ -4,6 +4,7 @@ import Tag from '@/components/Tag'
 import TagDatab from '@/components/TagDatabase'
 import TagBack from '@/components/TagBackend'
 import TagFront from '@/components/TagFrontend'
+import TagML from '@/components/TagML'
 import siteMetadata from '@/data/siteMetadata'
 import { useState } from 'react'
 import Pagination from '@/components/Pagination'
@@ -33,7 +34,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               type="text"
               onChange={(e) => setSearchValue(e.target.value)}
               placeholder="Search articles"
-              className="block w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-amber-500 focus:ring-amber-500 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-100"
+              className="block w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-amber-700 focus:ring-amber-500 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-100"
             />
             <svg
               className="absolute right-3 top-3 h-5 w-5 text-gray-400 dark:text-gray-300"
@@ -94,6 +95,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               'dynamodb',
               'cassandra',
             ]
+            const lang_ml = ['RAG', 'Langfuse', 'TruLens', 'Phoenix', 'Python', 'Ollama']
 
             return (
               <li key={slug} className="py-4">
@@ -120,9 +122,12 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                               <TagBack key={tag} text={tag} />
                             ) : lang_database.includes(tag) ? (
                               <TagDatab key={tag} text={tag} />
+                            ) : lang_ml.includes(tag) ? (
+                              <TagML key={tag} text={tag} />
                             ) : (
                               <Tag key={tag} text={tag} />
                             )
+                          // :lang_ml.includes(tag)?
                           // < Tag key = { tag } text = { tag } />
                         )}
                       </div>
