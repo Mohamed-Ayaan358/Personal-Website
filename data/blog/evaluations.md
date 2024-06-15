@@ -153,8 +153,6 @@ I was able to figure out a way by which we can utilize the Langfuse API (Thank g
 
 The ability to create a custom scoring mechanism is extremely handy, as the way by which you accomplish this is by mentioning a line that the evaluation model utilizes to score the traces appropriately.
 
-
-
 ```python
   criteria = {
     "hallucination": (
@@ -178,12 +176,8 @@ The ability to create a custom scoring mechanism is extremely handy, as the way 
 3. No custom columns per se, but they did recommend an alternative by utilizing one of the other columns.
 4. There should perhaps be more detailed documentation regarding the setup for local LLMs.
 
-
-
 ## Final Summary
 
 Do note that I completely understand that these tools are only meant for evaluation, so my grip considering the inability to have custom columns shouldn't be considered. However personally for my task, it would have been beneficial.
 
 #### I have personally settled on utilizing Langfuse, for my usage to obtain evaluation results for my RAG, but as I said, I might explore RAGAS in the future and give it a try.
-
-Special thanks to [Anirudh Rowjee](http://rowjee.com/) for proofreading the blog post, thanks brother!
