@@ -84,6 +84,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               'laravel',
               'ruby',
               'scala',
+              'python',
               'graphql',
             ]
             const lang_database = [
@@ -95,7 +96,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               'dynamodb',
               'cassandra',
             ]
-            const lang_ml = ['RAG', 'Langfuse', 'TruLens', 'Phoenix', 'Python', 'Ollama']
+            const lang_ml = ['RAG', 'Langfuse', 'TruLens', 'Phoenix', 'Ollama']
 
             return (
               <li key={slug} className="py-4">

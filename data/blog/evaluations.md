@@ -6,13 +6,23 @@ draft: false
 summary: My experience with RAG evaluators
 ---
 
-# What's up guys Ayaan here, it's been a while but I hope this time I'll stick around and be more frequent.
+### What's up guys Ayaan here, it's been a while but I hope this time I'll stick around and be more frequent.
 
 I have had to recently cycle through various evaluation frameworks for a particular task I have been working on, and I thought I would share my experiences with everyone.
 
 ## RAGs are all the rage nowadays
 
 But they were first looked into as a concept in [2020 by Facebook researchers](https://arxiv.org/abs/2005.11401v4), RAG is a new method that blends two types of memory: one representing the model's inherent knowledge and another functioning like a search engine. This combination enhances the model's ability to access and utilize information effectively.
+
+Imagine the language model as a chef with a vast internal cookbook (its training data). When asked to prepare a specific dish (respond to a query), the chef consults not only their own cookbook but also steps out to gather fresh ingredients (external data) from the market (the internet or databases). This allows the chef to create a dish (response) that is not only delicious(coherent) but also tailored to the diner’s current craving (contextually relevant), resulting in a more satisfying culinary experience (informative answer).
+
+A simple technical breakdown of the entire process would entail:-
+
+1. Input Processing: It begins with the user’s input, which the model uses to understand the context and intent of the query.
+
+2. Data Retrieval: The model then fetches relevant information from various external sources, such as databases or the internet.
+
+3. Response Generation: Finally, it integrates this retrieved information into the language model’s response, enriching it with contextually appropriate content.
 
 Of course, companies obviously should optimize the way by which they obtain the correct RAG implementation to minimize any false results obtained from it. That is where these evaluation frameworks come in handy.
 
