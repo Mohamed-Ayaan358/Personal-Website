@@ -105,6 +105,8 @@ Now let's get back to the topic at hand, how are we ever going to resolve this i
 
     With vast distances between systems, one solution is to create a "time-indexed" approach where all data is stamped with precise temporal markers that indicate its origin, context, and system of time.
 
+ <Image src="/static/images/timestamp.jpeg" width={800} height={500} />
+
 #### 5. <u>Self-Organizing Consensus Networks (SOCNs)</u>:
 
     A self-organizing network of devices could continuously establish consensus across interstellar systems, creating decentralized, resilient synchronization. Each device in the network would carry its own "trust score" and share periodic status updates, allowing the system to evaluate and select the most probable "current state" of distant systems. Additionally, an election system can be applied similar to Raft to determine what would be the best node to obtain data from, the trust score would minimize the amount of data needed to be sent across and reduce the time and complexity of the system needed to determine a leader for the election. This is kind of similar to the second point which I have mentioned.
