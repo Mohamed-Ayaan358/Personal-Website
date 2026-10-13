@@ -2033,7 +2033,7 @@ h1 em {
 
 /* Five project cards stay readable and wrap on smaller tables. */
 .hand { flex-wrap: wrap; gap: 10px; row-gap: 24px; }
-.hand .card { width: clamp(130px, 17vw, 180px); margin: 0; }
+.hand .card { width: clamp(130px, 15vw, 160px); margin: 0; }
 .hand .card:nth-child(4) { transform: rotate(4deg); }
 .hand .card:nth-child(5) { transform: rotate(8deg); }
 @media (max-width:700px) { .hand .card { width: 130px; } }
