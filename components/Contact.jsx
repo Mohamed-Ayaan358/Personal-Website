@@ -12,7 +12,7 @@ export default function Contact() {
       </div>
       <h2>Make the next move.</h2>
       <p className="lead">An idea, a question, or a simple hello.</p>
-      <a className="button" href="mailto:ayaan35813@gmail.com">
+      <a className="button" href="mailto:ayaanoff0@gmail.com">
         LET’S TALK ↗
       </a>
       <div className="social-pack" id="social-pack">
@@ -59,7 +59,7 @@ export default function Contact() {
           </a>
           <a
             className="social-card"
-            href="mailto:ayaan35813@gmail.com"
+            href="mailto:ayaanoff0@gmail.com"
             tabIndex="-1"
           >
             <span className="social-suit">✉</span>
@@ -118,7 +118,7 @@ export default function Contact() {
           >
             LinkedIn ↗
           </a>
-          <a href="mailto:ayaan35813@gmail.com">Say hello ↗</a>
+          <a href="mailto:ayaanoff0@gmail.com">Say hello ↗</a>
         </div>
         <div>
           <span className="footer-label">BACK TO THE TABLE</span>

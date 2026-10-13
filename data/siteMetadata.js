@@ -8,7 +8,7 @@ const siteMetadata = {
   logo: '💻',
   image: '/static/images/Avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'ayaan35813@gmail.com',
+  email: 'ayaanoff0@gmail.com',
   github: 'https://github.com/Mohamed-Ayaan358',
   linkedin: 'https://www.linkedin.com/in/mohamed-ayaan-1750311b8/',
   locale: 'en-US',
