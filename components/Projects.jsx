@@ -1,3 +1,4 @@
+import { projects } from "../lib/games/projects";
 export default function Projects() {
   return (
     <section id="projects" className="chapter">
@@ -11,7 +12,7 @@ export default function Projects() {
       <div className="game-shell project-game">
         <div className="table-heading">
           <span>THE BUILD TABLE</span>
-          <span id="deal-count">YOUR HAND · 3 CARDS</span>
+          <span id="deal-count">YOUR HAND · {projects.length} CARDS</span>
         </div>
         <div id="project-scene" className="scene" aria-hidden="true"></div>
         <div id="played-card" className="played-card" aria-hidden="true">
@@ -32,48 +33,32 @@ export default function Projects() {
           </a>
         </div>
         <div className="hand" aria-label="Project cards">
-          <button className="card" data-project="0">
-            <span className="corner">
-              A<br />♠
-            </span>
-            <span className="suit">♠</span>
-            <strong>Stalkr</strong>
-            <small>Website change tracking</small>
-            <span className="card-action">DEAL THIS PROJECT ↗</span>
-            <span className="corner bottom">
-              A<br />♠
-            </span>
-          </button>
-          <button className="card" data-project="1">
-            <span className="corner">
-              K<br />♣
-            </span>
-            <span className="suit">♣</span>
-            <strong>SysPerf</strong>
-            <small>A Rust & Go system monitor</small>
-            <span className="card-action">DEAL THIS PROJECT ↗</span>
-            <span className="corner bottom">
-              K<br />♣
-            </span>
-          </button>
-          <button className="card" data-project="2">
-            <span className="corner">
-              Q<br />♦
-            </span>
-            <span className="suit">♦</span>
-            <strong>Planet Portfolio</strong>
-            <small>A Three.js portfolio experiment</small>
-            <span className="card-action">DEAL THIS PROJECT ↗</span>
-            <span className="corner bottom">
-              Q<br />♦
-            </span>
-          </button>
+          {projects.map((project, index) => (
+            <button className="card" data-project={index} key={project.repo}>
+              <span className="corner">
+                {project.rank}
+                <br />
+                {project.suit}
+              </span>
+              <span className="suit">{project.suit}</span>
+              <strong>{project.name}</strong>
+              <small>{project.description}</small>
+              <span className="card-action">DEAL THIS PROJECT ↗</span>
+              <span className="corner bottom">
+                {project.rank}
+                <br />
+                {project.suit}
+              </span>
+            </button>
+          ))}
         </div>
         <p className="hint">
           A CARD GAME ABOUT CODE. EVERY TOKEN IS A LANGUAGE.
         </p>
       </div>
-    <a className="scroll-link" href="/projects">ALL PROJECTS ↗</a>
+      <a className="scroll-link" href="/projects">
+        ALL PROJECTS ↗
+      </a>
     </section>
   );
 }
