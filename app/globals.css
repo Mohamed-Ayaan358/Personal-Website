@@ -2037,3 +2037,13 @@ h1 em {
 .hand .card:nth-child(4) { transform: rotate(4deg); }
 .hand .card:nth-child(5) { transform: rotate(8deg); }
 @media (max-width:700px) { .hand .card { width: 130px; } }
+
+/* An overlapping poker hand; remaining cards re-fan when one is dealt. */
+.hand { flex-wrap: nowrap; gap: 0; padding: 48px 20px 42px; min-height: 330px; isolation: isolate; }
+.hand .card { width: 180px; height: 250px; margin: 0 0 0 -58px; transform-origin: 50% 125%; transform: translateY(var(--fan-lift)) rotate(var(--fan-angle)); z-index: var(--fan-order); transition: transform .45s ease, margin .45s ease, opacity .3s; box-shadow: -5px 4px 16px #0002; }
+.hand .card[data-fan-first="true"] { margin-left: 0; }
+.hand .card:hover,.hand .card:focus-visible { transform: translateY(calc(var(--fan-lift) - 30px)) rotate(var(--fan-angle)); z-index: 20; }
+.hand .card.returning { animation-name: fan-return; }
+@keyframes fan-return { from { opacity: 0; transform: translateY(-100px) rotate(var(--fan-angle)); } to { opacity: 1; transform: translateY(var(--fan-lift)) rotate(var(--fan-angle)); } }
+@media(max-width:700px) { .hand { padding: 40px 10px 38px; min-height:280px; } .hand .card { width:120px; height:210px; margin-left:-74px; padding-inline:8px; } .hand .card strong { font-size:15px; } .hand .card:hover,.hand .card:focus-visible { transform:translateY(calc(var(--fan-lift) - 18px)) rotate(var(--fan-angle)); } }
+@media(prefers-reduced-motion:reduce) { .hand .card { transition:none; } }

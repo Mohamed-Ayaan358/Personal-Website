@@ -34,7 +34,18 @@ export default function Projects() {
         </div>
         <div className="hand" aria-label="Project cards">
           {projects.map((project, index) => (
-            <button className="card" data-project={index} key={project.repo}>
+            <button
+              className="card"
+              data-project={index}
+              key={project.repo}
+              aria-label={`Play ${project.name}`}
+              data-fan-first={index === 0}
+              style={{
+                "--fan-angle": `${(index - (projects.length - 1) / 2) * 10}deg`,
+                "--fan-lift": `${Math.pow(index - (projects.length - 1) / 2, 2) * 6}px`,
+                "--fan-order": index + 1,
+              }}
+            >
               <span className="corner">
                 {project.rank}
                 <br />
@@ -43,7 +54,6 @@ export default function Projects() {
               <span className="suit">{project.suit}</span>
               <strong>{project.name}</strong>
               <small>{project.description}</small>
-              <span className="card-action">DEAL THIS PROJECT ↗</span>
               <span className="corner bottom">
                 {project.rank}
                 <br />
