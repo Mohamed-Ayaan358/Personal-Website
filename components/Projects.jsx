@@ -20,7 +20,7 @@ export default function Projects() {
           <strong></strong>
         </div>
         <div className="table-result" aria-live="polite">
-          <span id="project-status">Choose a project from your hand.</span>
+          <span id="project-status"></span>
           <div id="language-labels"></div>
           <a
             id="github-link"
