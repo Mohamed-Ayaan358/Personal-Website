@@ -174,6 +174,7 @@ class Sketch extends Component {
 
     //
   }
+  componentWillUnmount() { this.sketch?.remove(); }
   render() {
     return (
       <div className="App">
