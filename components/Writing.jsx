@@ -43,8 +43,8 @@ export default function Writing() {
               </button>
             </div>
             <p id="checker-status" role="status">
-              Drag a numbered piece diagonally, or select it and click a
-              highlighted square.
+              Tap a piece, then a highlighted square. On desktop, you can also drag
+              diagonally.
             </p>
             <div className="checker-controls">
               <button id="move-left" disabled>
@@ -60,7 +60,7 @@ export default function Writing() {
           </div>
         </div>
         <p className="hint">
-          DRAG TO MOVE · CLICK A PIECE + SQUARE · CAPTURE TO REVEAL A STORY
+          TAP A PIECE + SQUARE · DRAG ON DESKTOP · CAPTURE TO REVEAL A STORY
         </p>
       </div>
       <a className="scroll-link" href="/blog">

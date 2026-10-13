@@ -737,7 +737,7 @@ dialog::backdrop {
   font-weight: 700;
 }
 #checker-scene {
-  touch-action: none;
+  touch-action: pan-y pinch-zoom;
   cursor: grab;
 }
 #checker-scene.dragging {
