@@ -29,3 +29,9 @@ Google Analytics retains the existing public measurement ID. Giscus uses the exi
 The previous site's implementation is preserved in `legacy/` for reference. It is not used to build the replacement. Content under `data/` and existing public assets remain intact.
 
 See [DESIGN.md](./DESIGN.md) for the animation module structure.
+
+## Simple portfolio
+
+`/simple` is the concise dark portfolio. Its content is in `app/simple/page.jsx` and its styles are isolated in `app/simple/simple.module.css`.
+
+To serve it at `simple.mayaan.site`, add that domain to this same Vercel project and create the DNS record shown by Vercel. The host-based rewrite serves `/simple` at the subdomain root while retaining the interactive site at `www.mayaan.site`. Deploy this source change before testing the domain. The existing résumé is reused at `/Ayaan.pdf`; replace it when updating its content.
