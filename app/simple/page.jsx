@@ -1,4 +1,5 @@
 import styles from './simple.module.css';
+import InteractiveButton from '../../components/InteractiveButton';
 
 export const metadata = {
  title: 'Mohamed Ayaan — Software Engineer',
@@ -17,6 +18,7 @@ export default function SimplePortfolio() {
  return <div className={styles.portfolio}>
   <a className={styles.skip} href="#main">Skip to content</a>
   <div className={styles.page}>
+   <div className={styles.topActions}><InteractiveButton/></div>
    <header className={styles.header}>
     <img className={styles.portrait} src="/static/images/Avatar.jpeg" alt="Mohamed Ayaan" width="132" height="156"/>
     <div><p className={styles.kicker}>SOFTWARE ENGINEER · NEW YORK</p><h1>Mohamed Ayaan<span>.</span></h1><p className={styles.intro}>Computer science master’s student at NYU with an interest in <span className={styles.highlight}>accessibility technology</span>. I enjoy building <span className={styles.highlight}>integrated systems</span>, especially working on the <span className={styles.highlight}>backend</span>.</p></div>
@@ -36,7 +38,7 @@ export default function SimplePortfolio() {
     </section>
     <section id="education" className={styles.section}><div className={styles.sectionHeading}><h2>Education</h2></div><div className={styles.education}><div><h3>New York University</h3><p>Master’s in Computer Science</p></div><div><h3>PES University</h3><p>B.Tech in Computer Science · 2020–2024</p><p className={styles.meta}>CGPA 9.24</p></div></div></section>
    </main>
-   <footer className={styles.footer}><p>Have a question or something to build? <a href="mailto:ayaanoff0@gmail.com">Get in touch ↗</a></p><a href="https://www.mayaan.site">The interactive version ↗</a></footer>
+   <footer className={styles.footer}><p>Have a question or something to build? <a href="mailto:ayaanoff0@gmail.com">Get in touch ↗</a></p></footer>
   </div>
  </div>;
 }
